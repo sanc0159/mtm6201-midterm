@@ -1,0 +1,89 @@
+/*******Colors*******/
+/* purple #31081F
+clear #F0FFBB
+pink #FFA5A5
+blue #5BC0EB
+yellow #FDE74C
+green #9BC53D */
+
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #f0ffbb;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/*NAV*/
+
+.navlist {
+    display: flex;
+}
+
+nav {
+    background-color: white;
+}
+
+.navlist li {
+    color: #31081f;
+    text-align: center;
+}
+
+/*LoVe HAte*/
+
+.navlist a,
+.navlist a:link,
+.navlist a:visited {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navlist a:hover,
+.navlist a:focus,
+.navlist a.home {
+    background-color: #31081f;
+    padding: 10px;
+    color: #ffa5a5;
+}
+
+/*ABOUT US SECTION*/
+
+.aboutus {
+    background-color: white;
+    margin: 20px 50px 20px 50px;
+}
+
+/*POST*/
+
+.bloghome {
+    background-color: white;
+    margin: 20px 50px 20px 50px;
+}
+
+.read {
+    color: #5bc0eb;
+    background-color: #31081f;
+    padding: 5px;
+}
+
+.cards img {
+    float: left;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #31081f;
+    margin: 20px 50px 20px 50px;
+    color: #9bc53d;
+    display: flex;
+}
