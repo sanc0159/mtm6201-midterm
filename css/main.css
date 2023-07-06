@@ -1,4 +1,4 @@
-/*******Colors*******/
+/*******COLORS*******/
 /* purple #31081F
 clear #F0FFBB
 pink #FFA5A5
@@ -22,10 +22,33 @@ body {
     width: 60%;
 }
 
-/*NAV*/
+h1 {
+    font-family: 'Humming', sans-serif;
+    font-size: 3.8em;
+}
+
+h2 {
+    font-family: 'Nunito';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Nunito';
+}
+
+button {
+    font-family: 'Nunito';
+    text-transform: uppercase;
+}
+
+/*NAV ALL*/
 
 .navlist {
     display: flex;
+    font-family: 'Nunito';
+    text-transform: uppercase;
 }
 
 nav {
@@ -43,15 +66,17 @@ nav {
 .navlist a:link,
 .navlist a:visited {
     display: block;
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
+    font-weight: 700;
+    color: #31081f;
 }
 
 .navlist a:hover,
 .navlist a:focus,
 .navlist a.home {
     background-color: #31081f;
-    padding: 10px;
+    padding: 20px;
     color: #ffa5a5;
 }
 
@@ -60,13 +85,15 @@ nav {
 .aboutus {
     background-color: white;
     margin: 20px 50px 20px 50px;
+    padding: 20px;
 }
 
-/*POST*/
+/*POST HOME*/
 
 .bloghome {
     background-color: white;
     margin: 20px 50px 20px 50px;
+    padding: 20px;
 }
 
 .read {
@@ -75,15 +102,24 @@ nav {
     padding: 5px;
 }
 
-.cards img {
-    float: left;
+.card1,
+.card2,
+.card3 {
+    margin-bottom: 20px;
 }
 
-/*FOOTER*/
+.cards img {
+    float: left;
+    padding: 10px;
+}
+
+/*FOOTER ALL*/
 
 footer {
+    font-family: 'Nunito';
     background-color: #31081f;
     margin: 20px 50px 20px 50px;
+    padding: 20px;
     color: #9bc53d;
     display: flex;
 }
