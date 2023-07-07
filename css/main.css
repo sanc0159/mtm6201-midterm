@@ -7,7 +7,6 @@ yellow #FDE74C
 green #9BC53D */
 
 body {
-    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -24,18 +23,21 @@ body {
 
 h1 {
     font-family: 'Humming', sans-serif;
-    font-size: 3.8em;
+    font-size: 3em;
+    font-weight: 100;
+    color: #31081f;
 }
 
 h2 {
     font-family: 'Nunito';
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 p {
     font-family: 'Nunito';
+    font-size: 20px;
 }
 
 button {
@@ -45,17 +47,15 @@ button {
 
 /*NAV ALL*/
 
-.navlist {
-    display: flex;
+
+.navlist{
+    display: inline;
     font-family: 'Nunito';
     text-transform: uppercase;
 }
 
-nav {
-    background-color: white;
-}
-
 .navlist li {
+    background-color: white;
     color: #31081f;
     text-align: center;
 }
@@ -66,7 +66,7 @@ nav {
 .navlist a:link,
 .navlist a:visited {
     display: block;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     font-weight: 700;
     color: #31081f;
@@ -76,7 +76,7 @@ nav {
 .navlist a:focus,
 .navlist a.home {
     background-color: #31081f;
-    padding: 20px;
+    padding: 10px;
     color: #ffa5a5;
 }
 
