@@ -11,19 +11,13 @@
 
     <!-- Font links -->
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <style>
-        body {
-            font-family: 'Nunito';
-            font-size: 22px;
-        }
-    </style>
     <link href="https://fonts.cdnfonts.com/css/humming" rel="stylesheet">
-    <style>
-        @import url('https://fonts.cdnfonts.com/css/humming');
-    </style>
     <!--REFERENCE: 
     Humming- https://www.cdnfonts.com/humming.font
     Nunito- https://www.w3schools.com/howto/tryit.asp?font=Nunito-->
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <title>Mood Bites - Products</title>
 </head>
@@ -38,46 +32,45 @@
             <!-- Creates navigation banner-->
             <nav class="max-width">
                 <ul class="navlist">
-                    <li><a href="#home" class="home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="home.html" class="home">Home blog</a></li>
+                    <li><a href="products.html" class="products">Mood Bites</a></li>
+                    <li><a href="contact.html" class="contact">Contact us</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <!--Product section-->
-            <div class="products">
+            <div class="content">
 
                 <!--Products will be in cards for grid in css-->
-                <section class="productlist">
-                    <div class="product1">
-                        <img src="#" alt="#">
+                <section class="cards">
+                    <div class="card1">
+                        <img src="images/product_1.png" alt="#">
                         <h1>Happy</h1>
-                        <h2>cupcakes</h2>
+                        <h2>Donuts</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet eveniet recusandae non
                             incidunt aliquid deserunt minima aperiam.
                         </p>
-                        <button class="read">View</button>
+                        <button class="read">View<i class="fa-solid fa-play"></i></button>
                     </div>
-                    <div class="product2">
-                        <img src="#" alt="#">
-                        <h1>Mood</h1>
-                        <h2>product</h2>
+                    <div class="card2">
+                        <img src="images/product_2.png" alt="#">
+                        <h1>Calm</h1>
+                        <h2>Cookies</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet eveniet recusandae non
                             incidunt aliquid deserunt minima aperiam.
                         </p>
-                        <button class="read">View</button>
+                        <button class="read">View<i class="fa-solid fa-play"></i></button>
                     </div>
-                    <div class="product3">
-                        <img src="#" alt="#">
-                        <h1>Mood</h1>
-                        <h2>product</h2>
+                    <div class="card3">
+                        <img src="images/product_3.png" alt="#">
+                        <h1>Romantic</h1>
+                        <h2>Brownies</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet eveniet recusandae non
                             incidunt aliquid deserunt minima aperiam.
                         </p>
-                        <button class="read">View</button>
+                        <button class="read">View<i class="fa-solid fa-play"></i></button>
                     </div>
                 </section>
             </div>
@@ -88,7 +81,7 @@
                 </div>
                 <!--Adds link to XXX-->
                 <div class="reference">
-                    All images are taken from <a href="#" target="_blank">#</a>
+                    All images are taken from <a href="https://unsplash.com/es" target="_blank">Unsplash</a>
                 </div>
             </footer>
 

@@ -24,36 +24,51 @@ body {
 
 h1 {
     font-family: 'Humming', sans-serif;
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: 100;
     color: #31081f;
-    margin: 5px;
-    margin-top: 0;
+    margin: 0;
 }
 
 h2 {
     font-family: 'Nunito';
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.6em;
     margin: 0;
 }
 
 p {
     font-family: 'Nunito';
-    font-size: 20px;
+    font-size: 1.1rem;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 button {
     font-family: 'Nunito';
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: .9rem;
+}
+
+/*LoVe HAte*/
+
+button,
+button:link,
+button:visited {
+    text-decoration: none;
+    color: #31081f;
+}
+
+button:hover,
+button:focus {
+    background-color: #FFA5A5;
+    color: #31081f;
 }
 
 main img {
     width: 100%;
+    border-radius: 10px;
 }
 
 /*NAV ALL MOBILE*/
@@ -68,6 +83,7 @@ main img {
     background-color: white;
     color: #31081f;
     text-align: center;
+    font-size: 1.3em;
 }
 
 /*LoVe HAte*/
@@ -87,7 +103,7 @@ main img {
 .navlist a.home {
     background-color: #31081f;
     padding: 10px;
-    color: #ffa5a5;
+    color: #FFA5A5;
 }
 
 /*ABOUT US SECTION MOBILE*/
@@ -96,20 +112,29 @@ main img {
     background-color: white;
     margin: 20px 50px 20px 50px;
     padding: 20px;
+    border-radius: 10px;
 }
 
 /*POST HOME MOBILE*/
 
-.bloghome {
+.content {
     background-color: white;
     margin: 20px 50px 20px 50px;
-    padding: 20px;
+    padding: 20px 20px 5px 20px;
+    border-radius: 10px;
 }
 
 .read {
     color: #5bc0eb;
     background-color: #31081f;
-    padding: 5px 10px;
+    padding: 0px 0px 0px 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+
+.read i {
+    padding: 10px;
 }
 
 .card1,
@@ -122,10 +147,8 @@ main img {
 
 footer {
     font-family: 'Nunito';
-    font-size: 14px;
+    font-size: 1em;
     background-color: #31081f;
-    margin: 20px 50px 20px 50px;
     padding: 20px;
     color: #9bc53d;
-    display: flex;
 }
