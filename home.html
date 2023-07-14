@@ -16,25 +16,26 @@
     Humming- https://www.cdnfonts.com/humming.font
     Nunito- https://www.w3schools.com/howto/tryit.asp?font=Nunito-->
 
-     <!-- Icon Link -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <title>Mood Bites - Home</title>
 </head>
 
 <body>
     <div class="container">
+        <a href="#maincontent" class="skip">skip to blog &darr;</a>
         <header>
             <!-- Logo goes over navigation banner -->
             <div class="logo">
                 <img src="images/sanchezA02-02-02.png" alt="Logo" class="logo">
             </div>
             <!-- Creates navigation banner-->
-            <nav class="max-width">
+            <nav>
                 <ul class="navlist">
-                    <li><a href="home.html" class="home">Home blog</a></li>
-                    <li><a href="products.html" class="products">Mood Bites</a></li>
-                    <li><a href="contact.html" class="contact">Contact us</a></li>
+                    <li><a href="home.html" class="home current">Home blog</a></li>
+                    <li><a href="products.html" class="products current">Mood Bites</a></li>
+                    <li><a href="contact.html" class="contact current">Contact us</a></li>
                 </ul>
             </nav>
         </header>
@@ -42,35 +43,47 @@
         <main>
             <!--About us section-->
             <div class="aboutus">
-                <img src="images/home_aboutus.png" alt="#">
+                <img src="images/home_aboutus.png" alt="About us picture">
                 <h1>About us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, at in vero quibusdam
                     hicorrupti dolorum numquam repudiandae ex asperiores saepe provident aut beatae necessitatibus
                     maxime odit, magni exercitationem ratione.</p>
             </div>
 
-            <div class="content">
+            <div id="maincontent" class="content">
                 <h1>Blog posts</h1>
                 <!--Blog will be in cards for grid in css-->
                 <section class="cards">
                     <div class="card1">
-                        <img src="images/home_blog1.png" alt="#">
+                        <picture>
+                            <source srcset="images/home_blog1b.png" media="(min-width: 1000px)">
+
+                            <img src="images/home_blog1.png" alt="Blog image">
+                        </picture>
                         <h2>Blog titlle 1</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing...
                         </p>
                         <button class="read">Read this post<i class="fa-solid fa-play"></i></button>
                     </div>
                     <div class="card2">
-                        <img src="images/home_blog2.png" alt="#">
+                        <picture>
+                            <source srcset="images/home_blog2b.png" media="(min-width: 1000px)">
+
+                            <img src="images/home_blog2.png" alt="Blog image">
+                        </picture>
                         <h2>Blog titlle 2</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing...
                         </p>
                         <button class="read">Read this post<i class="fa-solid fa-play"></i></button>
                     </div>
                     <div class="card3">
-                        <img src="images/home_blog3.png" alt="#">
+                        <picture>
+                            <source srcset="images/home_blog3b.png" media="(min-width: 1000px)">
+
+                            <img src="images/home_blog3.png" alt="Blog image">
+                        </picture>
                         <h2>Blog titlle 3</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing... 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing...
                         </p>
                         <button class="read">Read this post<i class="fa-solid fa-play"></i></button>
                     </div>
@@ -84,6 +97,11 @@
                 <!--Adds link to XXX-->
                 <div class="reference">
                     All images are taken from <a href="https://unsplash.com/es" target="_blank">Unsplash</a>
+                    <!-- Reference links for images-->
+                    <!--<a href="https://unsplash.com/@itsmiki5?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Milan Popovic</a> en <a href="https://unsplash.com/es/fotos/FHvpa4-Fpu8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+                    <!--<a href="https://unsplash.com/@biglaughkitchen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Deva Williamson</a> en <a href="https://unsplash.com/es/fotos/S2jw81lfrG0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+                    <!--<a href="https://unsplash.com/@chrismckflurry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cristina Hernández</a> en <a href="https://unsplash.com/es/fotos/D6zm7zVYNLk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+                    <!--<a href="https://unsplash.com/@maddibazzocco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maddi Bazzocco</a> en <a href="https://unsplash.com/es/fotos/-Wi2owaQcH8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
                 </div>
             </footer>
 

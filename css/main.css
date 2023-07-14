@@ -12,6 +12,30 @@ body {
 
 .container {
     background-color: #f0ffbb;
+    animation-name: changecolor;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/*COLOR CHANGES AS EACH PAGE LOADS*/
+@keyframes changecolor {
+    from {
+        background-color: #e2f69b;
+    }
+
+    to {
+        background-color: #f0ffbb;
+    }
+}
+
+/*SKIP: Jumps to the Blog div, only for mobile screen in the HOME page*/
+.skip {
+    font-family: 'Nunito';
+    font-size: 1rem;
+    background-color: #e2f69b;
+    padding: 8px;
+    border-radius: 5px;
+    color: #FFA5A5;
 }
 
 .logo {
@@ -20,6 +44,24 @@ body {
     margin-right: auto;
     width: 80%;
     height: auto;
+    animation-name: loadlogo;
+    animation-duration: 1s;
+}
+
+/* LOGO APEARS FOR BOTH SCREENS*/
+@keyframes loadlogo {
+    0% {
+        transform: translateY(-200px);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h1 {
@@ -41,7 +83,7 @@ h2 {
 p {
     font-family: 'Nunito';
     font-size: 1.1rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 0;
 }
 
@@ -73,7 +115,7 @@ main img {
 
 /*NAV ALL MOBILE*/
 
-.navlist{
+.navlist {
     display: inline;
     font-family: 'Nunito';
     text-transform: uppercase;
@@ -98,9 +140,9 @@ main img {
     color: #31081f;
 }
 
+.navlist a.home,
 .navlist a:hover,
-.navlist a:focus,
-.navlist a.home {
+.navlist a:focus {
     background-color: #31081f;
     padding: 10px;
     color: #FFA5A5;
@@ -115,7 +157,7 @@ main img {
     border-radius: 10px;
 }
 
-/*POST HOME MOBILE*/
+/*POST MOBILE*/
 
 .content {
     background-color: white;
@@ -143,7 +185,27 @@ main img {
     margin-bottom: 20px;
 }
 
-/*FOOTER ALL*/
+/* CONTACT MOBILE*/
+
+.form {
+    font-family: 'Nunito';
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.inputs {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.services {
+    padding-bottom: 20px;
+}
+
+/*FOOTER ALL: With reference link for the images source*/
 
 footer {
     font-family: 'Nunito';
@@ -151,4 +213,112 @@ footer {
     background-color: #31081f;
     padding: 20px;
     color: #9bc53d;
+}
+
+
+/***********************************************************************************************/
+/* DESKTOP STYLE */
+/***********************************************************************************************/
+
+
+@media screen and (min-width:1000px) {
+
+    .logo {
+        width: 50%;
+    }
+
+    /*Not necessary in this screen width*/
+    .skip {
+        display: none;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-family: 'Nunito';
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    /*NAV ALL DESKTOP: Displau flex and delete list bullet points*/
+
+    nav {
+        width: 100%;
+    }
+
+    .navlist {
+        display: flex;
+        padding: 0;
+    }
+
+    .navlist li {
+        flex-grow: 1;
+        list-style-type: none;
+        margin: 0 auto;
+    }
+
+    /*ABOUT US DESKTOP: Image is change to have it as a background */
+
+    .aboutus img {
+        display: none;
+    }
+
+    .aboutus {
+        background-image: url(../images/home_aboutusb.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 10% 30%;
+    }
+
+    .aboutus p {
+        background-color: rgba(255, 255, 255, 0.622);
+        border-radius: 10px;
+        padding: 10px 0px 10px 10px;
+        margin: 0;
+    }
+
+    /*POSTS DESKTOP: Change to GRID areas*/
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "cup tab cak";
+        gap: 30px;
+    }
+
+    .cards img {
+        width: 100%;
+    }
+
+    .card1 {
+        grid-area: cup;
+    }
+
+    .card2 {
+        grid-area: tab;
+    }
+
+    .card3 {
+        grid-area: cak;
+    }
+
+    /* CONTACT DESKTOP: Change of wisth for better user experience*/
+    .form {
+        width: 50%;
+        margin: 0 auto;
+    }
+
 }
